@@ -4,59 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact_usCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>Contact Us</title>
 </head>
+<style>
+    nav a {
+        color: white;
+        font-size: 0.80em;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+    }
+    nav a:hover {
+        color: rgb(1, 252, 218);
+    }
+    #logo {
+        margin: auto;
+        width: 380px;
+        height: 65px;
+        padding: 10px;
+    }
+    li {
+        padding: 5px 0px 5px 30px;
+    }
+    .subheader {
+        color: rgb(88, 88, 88);
+        padding: 30px;
+    }
+    .font {
+        color: rgb(88, 88, 88);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    button {
+        margin-top: 30px;
+    }
+    .footer {
+        background-color: rgb(32, 32, 32);
+    }
+</style>
 <body>
-    <div class="background">
-        <h1>HUBUNGI KAMI</h1>
-        <form>
-            <div><label class="border" for="nama_lengkap">NAMA LENGKAP </label></div>
-            <div><input type="text" id="nama_lengkap" name="nama_lengkap" placeholder="Masukkan Nama Anda.." required></div>
-            <div><label class="border" for="email">EMAIL </label></div>
-            <div><input type="email" id="email" name="email" required></div>
-            <div><label class="border" for="username">USERNAME </label></div>
-            <div><input type="text" id="username" name="username.." placeholder="Masukkan Username" required></div>
-            <div><label class="border" for="password">PASSWORD </label></div>
-            <div><input type="password" id="password" name="password" placeholder="Masukkan Password.." required></div>
-
-            <div><label class="border" for="jenis_kelamin">JENIS KELAMIN</label></div>
-            <div class="gender">
-                <input type="radio" id="pria" name="jenis_kelamin" value="pria">
-                <label for="pria">Laki-laki</label>
-            </div>
-            <div class="gender">
-                <input type="radio" id="wanita" name="jenis_kelamin" value="wanita">
-                <label for="wanita">Perempuan</label>
-            </div>
-
-            <div><label class="border" for="hobby">HOBBY</label></div>
-            <div class="hobby-inline">
-                <input type="checkbox" id="baca_buku" name="hobby" value="baca_buku"> 
-                <label for="baca_buku">Membaca </label>
-            </div>
-            <div class="hobby-inline">
-                <input type="checkbox" id="memasak" name="hobby" value="memasak">
-                <label for="memasak">Memasak</label>
-            </div>
-            <div class="hobby-inline">
-                <input type="checkbox" id="nonton" name="hobby" value="nonton">
-                <label for="nonton">Menonton TV</label>
-            </div>
-            <div class="border"><label for="agama">AGAMA</label></div>
-            <div> 
-                <select id="agama" name="agama">
-                    <option value="kristen_protestan" checked="checked">Kristen Protestan</option>
-                    <option value="islam">Islam</option>
-                    <option value="buddha">Buddha</option>
-                    <option value="konghuchu">Konghuchu</option>
-                    <option value="khatolik">Khatolik</option>
-                </select>
-            </div>
-            <div><label class="border" for="alamat">ALAMAT</label></div>
-            <div><textarea name="alamat" rows="5" cols="30"></textarea></div>
-            <div><input type="reset"></div>     
-            <div><input type="submit" value="Simpan"></div>
-        </form>
+    <div class="container">
+        <img id="logo" src="GetImage_Pengaturan.png"> 
+     </div>
+    
+     <nav class="navbar navbar-expand-sm" style="background-color: rgb(141, 24, 24);">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="#"></a>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#beranda" style="padding-left: 60px;">BERANDA</a></li>
+                <li class="nav-item"><a class="nav-link" href="biodata.html">BIODATA</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#berita_informasi" id="navbardrop" data-toggle="dropdown">BERITA & INFORMASI</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">NASIONAL</a>
+                        <a class="dropdown-item" href="#">INTERNASIONAL</a>
+                        <a class="dropdown-item" href="#">KEGIATAN INTERNAL</a>
+                        <a class="dropdown-item" href="#">PUBLIKASI & SIARAN PERS</a>
+                        <a class="dropdown-item" href="#">WAWASAN</a>
+                        <a class="dropdown-item" href="#">BUDAYA</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#galeri">GALERI</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#layanan_publik" id="navbardrop" data-toggle="dropdown">PELAYANAN PUBLIK</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">MAKLUMAT PELAYANAN PUBLIK</a>
+                        <a class="dropdown-item" href="#">HASIL SURVEY</a>
+                        <a class="dropdown-item" href="#">STANDAR PELAYANAN PUBLIK</a>
+                        <a class="dropdown-item" href="#">DOKUMENTASI SAKIP</a>
+                        <a class="dropdown-item" href="#">LAYANAN</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="karir.html">KARIR</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact_us.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="d-flex flex-row-reverse text-white" style="padding: 20px 50px 20px 0px; margin-top: 1px; background-color: rgb(75, 74, 74);">
+        <div>
+            <a href="#" style="color: white;">Beranda</a>
+            <span>/</span>
+            <a href="karir.html" style="color: white;">Karir</a>
+        </div>
     </div>
+    <div class="container" style="margin-bottom: 80px;">
+        <h4 class="subheader text-center"><b>HUBUNGI KAMI</b></h4>
+
+        <div class="card border border-secondary">
+            <form action="/action_page.php" style="padding: 30px;">
+                <!-- Text -->
+                <div class="form-group">
+                    <label class="font" for="nama">NAMA</label>
+                    <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label class="font" for="email">EMAIL</label>
+                    <input type="email" class="form-control" id="email" placeholder="Masukkan Email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label class="font" for="username">USERNAME</label>
+                    <input type="text" class="form-control" id="username" placeholder="Masukkan Username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label class="font" for="pwd">PASSWORD</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Masukkan Password" name="pswd" required>
+                </div>
+                
+                <!-- Radio -->
+                <div class="font" style="padding-bottom: 10px;">JENIS KELAMIN</div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio">Laki-laki
+                    </label>
+                </div>
+                <div class="form-check-inline" style="padding-left: 50px;">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio">Perempuan
+                    </label>
+                </div>
+                <!-- Checkboxes -->
+                <div class="font" style="padding: 20px 0px 10px 0px;">HOBBY</div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Membaca
+                    </label>
+                </div>
+                <div class="form-check-inline" style="padding-left: 30px;">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Memasak
+                    </label>
+                </div>
+                <div class="form-check-inline" style="padding-left: 30px;">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Mendengarkan musik
+                    </label>
+                </div>
+                <!-- Agama -->
+                <div class="form-group" style="padding-top: 20px;">
+                    <label class="font" for="agama">AGAMA</label>
+                    <select class="form-control" id="agama1">
+                        <option checked="checked">Kristen Protestan</option>
+                        <option>Islam</option>
+                        <option>Buddha</option>
+                        <option>Konghuchu</option>
+                        <option>Khatolik</option>
+                        <option>Lainnya</option>
+                    </select>
+                </div>
+                <!-- Alamat -->
+                <div class="font" class="form-group">
+                    <label for="alamat">ALAMAT</label>
+                    <textarea class="form-control" id="alamat" name="alamat" rows="5"></textarea>
+                </div>    
+                <button type="button" class="btn btn-dark">Kirim</button>
+            </form>
+        </div> 
+    </div>
+    <!-- <div class="footer">dafsd</div>
+    <div class="jumbotron" style="background-color: rgb(126, 18, 18); margin-bottom: 0;">asdfgh</div> -->
 </body>
 </html>
